@@ -1,0 +1,638 @@
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;  
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+/* CODE */
+
+::-webkit-scrollbar {
+
+    scroll-behavior: smooth;
+    width: 9px;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgba(240, 197, 233, 0.5);
+    border-radius: 10px;
+}
+
+html {
+    overflow-y: overlay;
+    scroll-behavior: smooth;
+}
+
+#nav {
+    position: fixed;
+    float: right;
+    top: 25%;
+    right: 2%;
+    width: 10%;
+}
+
+#nav li {
+    list-style: none;
+}
+
+#nav a {
+    float: right;
+    color: rgb(189, 174, 187);
+    text-decoration: none;
+    font-size: 250%;
+    margin-top: 10px;
+    padding-right: 10px;
+    border-right: 2px solid rgb(189, 174, 187);
+    transition: 0.7s;
+    font-family: Raleway;
+}
+    
+#nav a:hover {
+    transition: 0.7s;
+    padding-right: 50px;
+    border-right: 10px solid rgb(189, 174, 187);
+}
+
+section div {
+    display: flex;
+    align-items: center;
+    min-height: 1080px;  
+    width: 100%;
+    transition: 0.5s;
+}
+
+.sections a {
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+section a:hover {
+    border-left: 5px solid rgb(241, 225, 239);
+    margin-left: 20px;
+    padding: 15px 15px;
+    padding-left: 75px;
+    transition: 1s;
+/*    background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) ) */
+}
+.sections pre {
+    color: rgb(230, 204, 226);
+    font-family: Raleway;
+    font-size: 400%;
+    padding-left: 50px;
+}
+
+#sana {
+    background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8) ), url('images/sana/image1.jpg');
+    background-size: cover;}
+
+#dahyun {
+    background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8) ), url('images/dahyun/image1.jpg');
+    background-size: cover;
+}
+
+#chaeyoung {
+    background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8) ), url('images/chaeyoung/image1.jpg');
+    background-size: cover;
+}
+
+#nayeon {
+    background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8) ), url('images/nayeon/image1.jpg');
+    background-size: cover;
+}
+
+#momo {
+    background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8) ), url('images/momo/image1.jpg');
+    background-size: cover;
+}
+
+#mina {
+    background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8) ), url('images/mina/image1.jpg');
+    background-size: cover;
+}
+
+#tzuyu {
+    background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8) ), url('images/tzuyu/image1.jpg');
+    background-size: cover;
+}
+
+#jeongyeon {
+    background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8) ), url('images/jeongyeon/image1.jpg');
+    background-size: cover;
+}
+
+#jihyo {
+    background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8) ), url('images/jihyo/image1.jpg');
+    background-size: cover;
+}
+
+/* MEDIA QUERIES */
+/* MEDIA QUERIES WIDTH */ 
+
+@media only screen and (max-width: 1366px) {
+    #nav li {
+        list-style: none;
+    }
+    
+    #nav a {
+        float: right;
+        color: #F0DBED;
+        text-decoration: none;
+        font-size: 250%;
+        margin-top: 10px;
+        padding-right: 10px;
+        border-right: 2px solid #F0DBED;
+        transition: 0.7s;
+        font-family: Raleway;
+    }
+    
+    #nav a:hover {
+        transition: 0.7s;
+        padding-right: 50px;
+        border-right: 10px solid #F0DBED;
+    }
+
+    section div {
+        display: flex;
+        align-items: center;
+        min-height: 768px;
+        width: 100%;
+    }
+    
+    section a:hover {
+        border-left: 5px solid rgb(240, 197, 233);
+        margin-left: 20px;
+        padding: 15px 15px;
+        padding-left: 75px;
+        transition: 1s;
+    /*    background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) ) */
+    }
+
+    #sana {
+        background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8) ), url('images/sana/image1.1.jpg');
+        background-size: cover;}
+    
+    #dahyun {
+        background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8) ), url('images/dahyun/image1.1.jpg');
+        background-size: cover;
+    }
+    
+    #chaeyoung {
+        background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8) ), url('images/chaeyoung/image1.1.jpg');
+        background-size: cover;
+    }
+    
+    #nayeon {
+        background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8) ), url('images/nayeon/image1.1.jpg');
+        background-size: cover;
+    }
+    
+    #momo {
+        background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8) ), url('images/momo/image1.1.jpg');
+        background-size: cover;
+    }
+    
+    #mina {
+        background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8) ), url('images/mina/image1.1.jpg');
+        background-size: cover;
+    }
+    
+    #tzuyu {
+        background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8) ), url('images/tzuyu/image1.1.jpg');
+        background-size: cover;
+    }
+    
+    #jeongyeon {
+        background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8) ), url('images/jeongyeon/image1.1.jpg');
+        background-size: cover;
+    }
+    
+    #jihyo {
+        background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8) ), url('images/jihyo/image1.1.jpg');
+        background-size: cover;
+    }
+    
+}
+
+@media only screen and (max-width: 1000px) {
+    section div {
+        display: flex;
+        align-items: center;
+        min-height: 768px;
+        width: 100%;
+    }
+    
+    #sana {
+        background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8) ), url('images/sana/image2.jpg');
+        background-size: cover;}
+    
+    #dahyun {
+        background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8) ), url('images/dahyun/image2.jpg');
+        background-size: cover;
+    }
+    
+    #chaeyoung {
+        background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8) ), url('images/chaeyoung/image2.jpg');
+        background-size: cover;
+    }
+    
+    #nayeon {
+        background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8) ), url('images/nayeon/image2.jpg');
+        background-size: cover;
+    }
+    
+    #momo {
+        background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8) ), url('images/momo/image2.jpg');
+        background-size: cover;
+    }
+    
+    #mina {
+        background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8) ), url('images/mina/image2.jpg');
+        background-size: cover;
+    }
+    
+    #tzuyu {
+        background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8) ), url('images/tzuyu/image2.jpg');
+        background-size: cover;
+    }
+    
+    #jeongyeon {
+        background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8) ), url('images/jeongyeon/image2.jpg');
+        background-size: cover;
+    }
+    
+    #jihyo {
+        background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8) ), url('images/jihyo/image2.jpg');
+        background-size: cover;
+    }
+}
+
+
+
+
+@media only screen and (max-width: 768px) {
+    section div {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        min-height: 768px;  
+        width: 100%;
+        transition: 0.5s;
+    }
+    
+    .sections pre {
+        color: rgb(240, 197, 233);
+        font-family: Raleway;
+        font-size: 350%;
+        padding-right: 20px;
+        margin-right: 5px;
+    }
+
+    section a:hover {
+        border-right: 5px solid rgb(240, 197, 233);
+        margin-right: 20px;
+        padding: 15px 15px;
+        padding-right: 15px;
+        transition: 1s;
+        /*    REMOVED FOR QUERIES    */
+        border-left: 0px solid rgb(240, 197, 233);
+
+    }
+
+    #nav {
+        position: fixed;
+        float: right;
+        top: 30%;
+        left: 2%;
+        width: 10%;
+    }
+
+    #nav li {
+        list-style: none;
+    }
+    
+    #nav a {
+        float: left;
+        color: #F0DBED;
+        text-decoration: none;
+        font-size: 250%;
+        margin-top: 10px;
+        padding-left: 10px;
+        border-left: 2px solid #F0DBED;
+        transition: 0.7s;
+        font-family: Raleway;
+        /*    REMOVED FOR QUERIES    */
+        border-right: 0px solid #F0DBED;
+        padding-right: 0px;
+    }
+    
+    #nav a:hover {
+        transition: 0.7s;
+        padding-left: 50px;
+        border-left: 10px solid #F0DBED;
+        /*    REMOVED FOR QUERIES    */
+        padding-right: 0px;
+        border-right: 0px solid #F0DBED;
+    }
+}
+
+
+
+@media only screen and (max-width: 480px) {
+    .sections pre {
+        color: rgb(240, 197, 233);
+        font-family: Raleway;
+        font-size: 250%;
+        padding-right: 15px;
+        margin-right: 5px;
+    }
+
+    #nav {
+        position: fixed;
+        float: right;
+        top: 30%;
+        left: 2%;
+        width: 10%;
+    }
+
+    #nav li {
+        list-style: none;
+    }
+    
+    #nav a {
+        float: left;
+        color: #F0DBED;
+        text-decoration: none;
+        font-size: 200%;
+        margin-top: 10px;
+        padding-left: 10px;
+        border-left: 2px solid #F0DBED;
+        transition: 0.7s;
+        font-family: Raleway;
+        /*    REMOVED FOR QUERIES    */
+        border-right: 0px solid #F0DBED;
+        padding-right: 0px;
+    }
+    
+    #nav a:hover {
+        transition: 0.7s;
+        padding-left: 50px;
+        border-left: 10px solid #F0DBED;
+        /*    REMOVED FOR QUERIES    */
+        padding-right: 0px;
+        border-right: 0px solid #F0DBED;
+    }
+}
+
+
+
+@media only screen and (max-width: 425px) {
+    .sections pre {
+        color: rgb(240, 197, 233);
+        font-family: Raleway;
+        font-size: 200%;
+        padding-right: 15px;
+        margin-right: 5px;
+    }
+
+    #nav {
+        position: fixed;
+        float: right;
+        top: 30%;
+        left: 2%;
+        width: 10%;
+    }
+
+    #nav li {
+        list-style: none;
+    }
+    
+    #nav a {
+        float: left;
+        color: #F0DBED;
+        text-decoration: none;
+        font-size: 125%;
+        margin-top: 10px;
+        padding-left: 10px;
+        border-left: 2px solid #F0DBED;
+        transition: 0.7s;
+        font-family: Raleway;
+        /*    REMOVED FOR QUERIES    */
+        border-right: 0px solid #F0DBED;
+        padding-right: 0px;
+    }
+    
+    #nav a:hover {
+        transition: 0.7s;
+        padding-left: 50px;
+        border-left: 10px solid #F0DBED;
+        /*    REMOVED FOR QUERIES    */
+        padding-right: 0px;
+        border-right: 0px solid #F0DBED;
+    }
+
+    section div {
+        display: flex;
+        align-items: center;
+        min-height: 648px;
+        width: 100%;
+    }
+    
+    #sana {
+        background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8) ), url('images/sana/image3.jpg');
+        background-size: cover;}
+    
+    #dahyun {
+        background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8) ), url('images/dahyun/image3.jpg');
+        background-size: cover;
+    }
+    
+    #chaeyoung {
+        background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8) ), url('images/chaeyoung/image3.jpg');
+        background-size: cover;
+    }
+    
+    #nayeon {
+        background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8) ), url('images/nayeon/image3.jpg');
+        background-size: cover;
+    }
+    
+    #momo {
+        background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8) ), url('images/momo/image3.jpg');
+        background-size: cover;
+    }
+    
+    #mina {
+        background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8) ), url('images/mina/image3.jpg');
+        background-size: cover;
+    }
+    
+    #tzuyu {
+        background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8) ), url('images/tzuyu/image3.jpg');
+        background-size: cover;
+    }
+    
+    #jeongyeon {
+        background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8) ), url('images/jeongyeon/image3.jpg');
+        background-size: cover;
+    }
+    
+    #jihyo {
+        background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8) ), url('images/jihyo/image3.jpg');
+        background-size: cover;
+    }
+}
+
+
+
+@media only screen and (max-width: 360px) {
+    .sections pre {
+        color: rgb(240, 197, 233);
+        font-family: Raleway;
+        font-size: 150%;
+        padding-right: 15px;
+        margin-right: 5px;
+    }
+
+    #nav {
+        position: fixed;
+        float: right;
+        top: 30%;
+        left: 2%;
+        width: 10%;
+    }
+
+    #nav li {
+        list-style: none;
+    }
+    
+    #nav a {
+        float: left;
+        color: #F0DBED;
+        text-decoration: none;
+        font-size: 100%;
+        margin-top: 10px;
+        padding-left: 10px;
+        border-left: 2px solid #F0DBED;
+        transition: 0.7s;
+        font-family: Raleway;
+        /*    REMOVED FOR QUERIES    */
+        border-right: 0px solid #F0DBED;
+        padding-right: 0px;
+    }
+    
+    #nav a:hover {
+        transition: 0.7s;
+        padding-left: 50px;
+        border-left: 10px solid #F0DBED;
+        /*    REMOVED FOR QUERIES    */
+        padding-right: 0px;
+        border-right: 0px solid #F0DBED;
+    }
+}
+
+
+
+
+/* MEDIA QUERIES */
+/* MEDIA QUERIES HEIGHT */ 
+
+@media only screen and (max-height: 768px) {
+    #nav {
+        position: fixed;
+        float: left;
+        top: 20%;
+        right: 2%;
+        width: 10%;
+    }
+}
+
+

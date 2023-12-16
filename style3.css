@@ -1,0 +1,903 @@
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;  
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+/* CODES */
+
+::-webkit-scrollbar {
+    scroll-behavior: smooth;
+    width: 9px;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgba(88, 73, 86, 0.5);
+    border-radius: 10px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* TOP */
+
+#top {
+    background: linear-gradient( rgba(180, 164, 178, 0.9), rgba(180, 164, 178, 0.1) );
+}
+
+.backbutton {
+    position: absolute;
+    top: 20%;
+    height: 100px;
+    width: 50px;
+    background-color: rgb(138, 128, 136);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.2s;
+}
+
+.backbutton a {
+    font-size: 45px;
+    width: 45px;
+    height: 45px;
+    color: rgb(218, 199, 216);
+    text-decoration: none;
+}
+
+.backbutton:hover {
+    background-color: rgb(87, 69, 85);
+    cursor: pointer;
+}
+
+.backbutton:hover > a{
+    color: rgb(218, 196, 212);
+}
+/* wrapper */
+
+.wrapper90 {
+    width: 90%;
+    margin: auto;
+}
+
+.widephoto {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding-top: 2%;
+}
+
+.widephoto img {
+    height: auto;
+    width: 40%;
+}
+
+.profilephoto {
+    display: flex;
+    justify-content: center;
+}
+
+.profilephoto img {
+    height: auto;
+    width: 10%;
+    border: 2px solid rgb(212, 141, 199);
+    margin-top: -5%;
+}
+
+.profileinfo {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.name h1 {
+    font-size: 300%;
+    padding: 10px;
+    font-family: Alex Brush;
+}
+
+.info {
+    display: flex;
+    justify-content: center;
+}
+
+.infos {
+    padding: 20px;
+}
+
+.infos h1 {
+    display: flex;
+    font-family: Quicksand;
+    font-size: 110%;
+    padding: 5px;
+}
+
+/* TOP */
+
+#backtotop {
+    width: 100%;
+    height: 50px;
+    background-color: rgb(230, 215, 228);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+}
+
+#backtotop a {
+    color: rgb(90, 83, 89);
+    padding: 5px;  
+    text-decoration: none; 
+    font-family: Raleway;
+}
+
+#backtotop:hover {
+    background-color: rgb(90, 83, 89);
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+#backtotop:hover > a {
+    color: rgb(230, 215, 228);
+    transition: 0.2s;
+}
+
+/* BOTTOM */
+
+#bottom {
+    background: linear-gradient( rgba(180, 164, 178, 0.1), rgba(180, 164, 178, 0.9) );
+    height: 100%;
+    margin-bottom: 0;
+}
+
+.show {
+    height: 50px;
+    width: 100%;
+    background-color: rgb(173, 163, 172);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    transition: 0.2s;
+}
+
+.show:hover {
+    background-color: rgb(87, 69, 85);
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.show:hover > a {
+    color: rgb(190, 180, 189);
+    transition: 0.2s;
+}
+
+.show a {
+    font-family: Roboto;
+    font-size: 125%;
+    color: rgb(87, 69, 85);
+    text-decoration: none;
+}
+
+.containergal {
+	width: 100%;
+    text-align: center;
+}
+
+.gallery {
+    display: inline-block;
+    margin: 10px;
+    border: 1px solid #ccc;
+    height: 202.5px;
+    width: 360px;
+    background-color: rgb(150, 142, 149);
+}
+
+.gallery:hover {
+    border: 1px solid #777;
+    cursor: pointer;
+}
+  
+.gallery img {
+    display: block;
+    margin: auto;
+
+    width: auto;
+    height: auto;
+
+    max-width: 360px;
+    max-height: 202.5px;
+    
+}
+
+.modal {
+	display: none;
+	position: fixed;
+	z-index: 1;
+	padding-top: 4.5%;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	background-color: rgba(0,0,0,0.9);
+}
+
+.modalmodification {
+	-webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+.modal img {
+    display: block;
+    margin: 0 auto;
+
+    width: auto;
+    height: auto;
+
+    max-width: 1440px;
+    min-height: 360px;
+    max-height: 750px;
+}
+
+@keyframes zoom {
+  from {transform:scale(.3)} 
+  to {transform:scale(1)}
+}
+
+
+
+@media only screen and (max-width: 1366px) {
+    .wrapper90 {
+        width: 90%;
+        margin: auto;
+    }
+    
+    .widephoto {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        padding-top: 2%;
+    }
+    
+    .widephoto img {
+        height: auto;
+        width: 45%;
+    }
+    
+    .profilephoto {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .profilephoto img {
+        height: auto;
+        width: 13%;
+        border: 2px solid rgb(212, 141, 199);
+        margin-top: -6%;
+    }
+    
+    .profileinfo {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .name h1 {
+        font-size: 250%;
+        padding: 10px;
+        font-family: Alex Brush;
+    }
+    
+    .info {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .infos {
+        padding: 20px;
+    }
+    
+    .infos h1 {
+        display: flex;
+        font-family: Quicksand;
+        font-size: 110%;
+        padding: 5px;
+    }
+
+    .modal img {
+        display: block;
+        margin: 0 auto;
+    
+        width: auto;
+        height: auto;
+    
+        max-width: 960px;
+        min-height: 360px;
+        max-height: 540px;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .wrapper90 {
+        width: 90%;
+        margin: auto;
+    }
+    
+    .widephoto {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        padding-top: 2%;
+    }
+    
+    .widephoto img {
+        height: auto;
+        width: 60%;
+    }
+    
+    .profilephoto {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .profilephoto img {
+        height: auto;
+        width: 17%;
+        border: 2px solid rgb(212, 141, 199);
+        margin-top: -7%;
+    }
+    
+    .profileinfo {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .name h1 {
+        font-size: 250%;
+        padding: 10px;
+        font-family: Alex Brush;
+    }
+    
+    .info {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .infos {
+        padding: 20px;
+    }
+    
+    .infos h1 {
+        display: flex;
+        font-family: Quicksand;
+        font-size: 100%;
+        padding: 5px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .wrapper90 {
+        width: 90%;
+        margin: auto;
+    }
+    
+    .widephoto {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        padding-top: 2%;
+    }
+    
+    .widephoto img {
+        height: auto;
+        width: 60%;
+    }
+    
+    .profilephoto {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .profilephoto img {
+        height: auto;
+        width: 20%;
+        border: 2px solid rgb(212, 141, 199);
+        margin-top: -10%;
+    }
+    
+    .profileinfo {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .name h1 {
+        font-size: 250%;
+        padding: 10px;
+        font-family: Alex Brush;
+    }
+    
+    .info {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .infos {
+        padding: 10px;
+    }
+    
+    .infos h1 {
+        display: flex;
+        font-family: Quicksand;
+        font-size: 90%;
+        padding: 5px;
+    }
+
+    .containergal {
+        width: 100%;
+        text-align: center;
+    }
+    
+    .gallery {
+        display: inline-block;
+        margin: 10px;
+        border: 1px solid #ccc;
+        height: 202.5px;
+        width: 360px;
+        background-color: rgb(150, 142, 149);
+    }
+    
+    .gallery:hover {
+        border: 1px solid #777;
+        cursor: pointer;
+    }
+      
+    .gallery img {
+        display: block;
+        margin: auto;
+    
+        width: auto;
+        height: auto;
+    
+        max-width: 360px;
+        max-height: 202.5px;
+        
+    }
+    
+    .modal {
+        display: none;
+        position: fixed;
+        z-index: 1;
+        padding-top: 20%;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgba(0,0,0,0.9);
+    }
+    
+    .modalmodification {
+        -webkit-animation-name: zoom;
+        -webkit-animation-duration: 0.6s;
+        animation-name: zoom;
+        animation-duration: 0.6s;
+    }    
+
+    .modal img {
+        display: block;
+        margin: 0 auto;
+    
+        width: auto;
+        height: auto;
+    
+        max-width: 480px;
+        min-height: 0px;
+        max-height: 540px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .wrapper90 {
+        width: 90%;
+        margin: auto;
+    }
+    
+    .widephoto {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        padding-top: 2%;
+    }
+    
+    .widephoto img {
+        height: auto;
+        width: 60%;
+    }
+    
+    .profilephoto {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .profilephoto img {
+        height: auto;
+        width: 23%;
+        border: 2px solid rgb(212, 141, 199);
+        margin-top: -10%;
+    }
+    
+    .profileinfo {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .name h1 {
+        font-size: 200%;
+        padding: 10px;
+        font-family: Alex Brush;
+    }
+    
+    .info {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .infos {
+        padding: 10px;
+    }
+    
+    .infos h1 {
+        display: flex;
+        font-family: Quicksand;
+        font-size: 90%;
+        padding: 5px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .wrapper90 {
+        width: 90%;
+        margin: auto;
+    }
+    
+    .widephoto {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        padding-top: 2%;
+    }
+    
+    .widephoto img {
+        height: auto;
+        width: 85%;
+    }
+    
+    .profilephoto {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .profilephoto img {
+        height: auto;
+        width: 30%;
+        border: 2px solid rgb(212, 141, 199);
+        margin-top: -15%;
+    }
+    
+    .profileinfo {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .name h1 {
+        font-size: 250%;
+        padding: 10px;
+        font-family: Alex Brush;
+    }
+    
+    .info {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .infos {
+        padding: 10px;
+    }
+    
+    .infos h1 {
+        display: flex;
+        font-family: Quicksand;
+        font-size: 90%;
+        padding: 5px;
+    }
+
+    .containergal {
+        width: 100%;
+        text-align: center;
+    }
+    
+    .gallery {
+        display: inline-block;
+        margin: 10px;
+        border: 1px solid #ccc;
+        height: 202.5px;
+        width: 360px;
+        background-color: rgb(150, 142, 149);
+    }
+    
+    .gallery:hover {
+        border: 1px solid #777;
+        cursor: pointer;
+    }
+      
+    .gallery img {
+        display: block;
+        margin: auto;
+    
+        width: auto;
+        height: auto;
+    
+        max-width: 360px;
+        max-height: 202.5px;
+        
+    }
+    
+    .modal {
+        display: none;
+        position: fixed;
+        z-index: 1;
+        padding-top: 15%;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgba(0,0,0,0.9);
+    }
+    
+    .modalmodification {
+        -webkit-animation-name: zoom;
+        -webkit-animation-duration: 0.6s;
+        animation-name: zoom;
+        animation-duration: 0.6s;
+    }    
+
+    .modal img {
+        display: block;
+        margin: 0 auto;
+    
+        width: auto;
+        height: auto;
+    
+        max-width: 360px;
+        min-height: 0px;
+        max-height: 540px;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .wrapper90 {
+        width: 96%;
+        margin: auto;
+    }
+    
+    .widephoto {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        padding-top: 2%;
+    }
+    
+    .widephoto img {
+        height: auto;
+        width: 100%;
+    }
+    
+    .profilephoto {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .profilephoto img {
+        height: auto;
+        width: 40%;
+        border: 2px solid rgb(212, 141, 199);
+        margin-top: -20%;
+    }
+    
+    .profileinfo {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .name h1 {
+        font-size: 250%;
+        padding: 10px;
+        font-family: Alex Brush;
+    }
+    
+    .info {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .infos {
+        padding: 10px;
+    }
+    
+    .infos h1 {
+        display: flex;
+        font-family: Quicksand;
+        font-size: 90%;
+        padding: 5px;
+    }
+}
+
+@media only screen and (max-width: 390px) {
+    .containergal {
+        width: 100%;
+        text-align: center;
+    }
+    
+    .gallery {
+        display: inline-block;
+        margin: 10px;
+        border: 1px solid #ccc;
+        height: 164.75px;
+        width: 300px;
+        background-color: rgb(150, 142, 149);
+    }
+    
+    .gallery:hover {
+        border: 1px solid #777;
+        cursor: pointer;
+    }
+      
+    .gallery img {
+        display: block;
+        margin: auto;
+    
+        width: auto;
+        height: auto;
+    
+        max-width: 300px;
+        max-height: 164.75px;
+        
+    }
+    
+    .modal {
+        display: none;
+        position: fixed;
+        z-index: 1;
+        padding-top: 50%;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgba(0,0,0,0.9);
+    }
+    
+    .modalmodification {
+        -webkit-animation-name: zoom;
+        -webkit-animation-duration: 0.6s;
+        animation-name: zoom;
+        animation-duration: 0.6s;
+    }
+    
+    .modal img {
+        display: block;
+        margin: 0 auto;
+    
+        width: auto;
+        height: auto;
+    
+        max-width: 300px;
+        min-height: 0px;
+        max-height: 540px;
+    }
+    
+    @keyframes zoom {
+      from {transform:scale(.3)} 
+      to {transform:scale(1)}
+    }
+}
