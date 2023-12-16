@@ -12,3 +12,17 @@ Welcome to the simple fansite for the K-pop group Twice! 🌟 This project is a 
 - Improve front-end development skills
 - Create an aesthetically pleasing and user-friendly design
 - Implement a mobile-responsive approach for accessibility
+
+## How to Explore
+
+1. Visit the fansite website at https://twicefansite.netlify.app/.
+2. Navigate through the different member galleries:
+   - Click on each member's gallery to view their stunning photos.
+   - Experience the beauty and talent of each Twice member.
+3. Enjoy the mobile-responsive design that ensures a seamless experience on various devices.
+
+## Acknowledgments
+
+- Thanks to Twice for being an inspiration!
+
+Happy browsing and enjoy the Twice experience! ❤️🎶
