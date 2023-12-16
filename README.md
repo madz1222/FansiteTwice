@@ -1,6 +1,6 @@
 # Twice Fansite
 
-Welcome to the official fansite for the K-pop group Twice! 🌟 This project is a website dedicated to showcasing the beauty and talent of each member of Twice. As a fan, I've created this site to not only express my love for Twice but also to enhance my front-end development skills and implement a mobile-responsive design.
+Welcome to the simple fansite for the K-pop group Twice! 🌟 This project is a website dedicated to showcasing the beauty of each member of Twice. As a fan, I've created this site to not only express my love for Twice but also to enhance my front-end development skills and implement a mobile-responsive design.
 
 ## Features
 
